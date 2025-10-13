@@ -1,1 +1,10 @@
-
+while True:
+    year = int(input("enter a year:"))
+    if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
+        print("leap year")
+    else:
+        print("not")
+    choose=input("do you want cheack again (YES/NO)")
+    if choose.lower() =='no':
+        print("thank you")
+        break
