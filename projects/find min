@@ -1,0 +1,6 @@
+l=[12,3,55,23,6,78,33,4]
+max=l[0]
+for i in l:
+    if i< max:
+        max=i
+print(max)
