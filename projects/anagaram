@@ -1,0 +1,13 @@
+s = input("enter a string:")
+v = input("enter b string:")
+
+f=sorted(s)
+print(f)
+
+t=sorted(v)
+print(t)
+
+if f == t:
+    print("given string is a anagram")
+else:
+    print(" not nagaram")
