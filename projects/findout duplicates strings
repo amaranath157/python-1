@@ -1,0 +1,25 @@
+name="Amara"
+dup={}
+caps=[]
+caps_count=0
+smalls=[]
+smal_count=0
+
+spaces=0
+for i in  name:
+    if name.count(i) > 1:
+        dup[i]=name.count(i)
+    elif i.isupper():
+        caps.append(i)
+        caps_count =caps_count+1
+    elif i.islower():
+        smalls.append(i)
+        smal_count = smal_count+1
+    elif i.isspace():
+        spaces=spaces+1
+print("duplicate:",dup)
+print("capitel:",caps)
+print("all caps count is:",caps_count)
+print("smalls letters is :",smalls)
+print(" smal_count:", smal_count)
+print("spaces:",spaces)
